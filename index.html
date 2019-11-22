@@ -9,7 +9,8 @@
 </head>
 <body>
 <div class="split left">
-<div class="card">
+<div class="container">
+    <div class="card">
     <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs" id="myTab-list" role="tablist">
         <li class="nav-item">
@@ -33,9 +34,9 @@
             <ul>
                 <li>1) vscode - C# extension</li>
                 <li>2) git for win/mac - installs bash</li>
-                <li><code>git --version</code></li>
+                <li><kbd>$ git --version</kbd></li>
                 <li>3) .net core 3.0 sdk</li>
-                <li><code>dotnet --list-sdks</code></li>
+                <li><kbd>$ dotnet --list-sdks</kbd></li>
             </ul>
         </p>
         <a href="#" class="card-link text-danger">Read more</a>
@@ -46,9 +47,9 @@
             <ul>
                     <li>1) vscode - C# extension - mac needs mono to debug .net</li>
                     <li>2) git for mac - installs bash</li>
-                    <li><code>git --version</code></li>
+                    <li><kbd>$ git --version</kbd></li>
                     <li>3) .net core 3.0 sdk</li>
-                    <li><code>dotnet --list-sdks</code></li>
+                    <li><kbd>$ dotnet --list-sdks</kbd></li>
             </ul>
         </p>
         <a href="#" class="card-link text-danger">Read more</a>
@@ -65,10 +66,55 @@
     </div>
     </div>
 </div>
+</div>
 
 </div>
 <div class="split right">
-
+<div id="list-view">
+<div class="container">
+        <div class="card-body">
+                <h4 class="card-title">Install Applications Below</h4>
+                <h6 class="card-subtitle mb-2">This will set up your dev environment</h6>
+                
+                    <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="pc" role="tabpanel">
+                    <p class="card-text">
+                        <ul>
+                            <li>1) vscode - C# extension</li>
+                            <li>2) git for win/mac - installs bash</li>
+                            <li><kbd>$ git --version</kbd></li>
+                            <li>3) .net core 3.0 sdk</li>
+                            <li><kbd>$ dotnet --list-sdks</kbd></li>
+                        </ul>
+                    </p>
+                    <a href="#" class="card-link text-danger">Read more</a>
+                    </div>
+                    
+                    <div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">  
+                    <p class="card-text">
+                        <ul>
+                                <li>1) vscode - C# extension - mac needs mono to debug .net</li>
+                                <li>2) git for mac - installs bash</li>
+                                <li><kbd>$ git --version</kbd></li>
+                                <li>3) .net core 3.0 sdk</li>
+                                <li><kbd>$ dotnet --list-sdks</kbd></li>
+                        </ul>
+                    </p>
+                    <a href="#" class="card-link text-danger">Read more</a>
+                    </div>
+                    
+                    <div class="tab-pane" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+                    <p class="card-text">
+                                <li>github account</li>
+                                <li>amazon aws / digital ocean / azure linux 16.04 vm</li>
+                                <li>pgadmin</li>
+                    </p>
+                    <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                    </div>
+                </div>
+                </div>
+</div>
+</div>
 </div>
 </body>
 <footer></footer>
@@ -77,5 +123,6 @@
 $('#myTab-list a').on('click', function (e) {
   e.preventDefault()
   $(this).tab('show')
+
 })
 </script>
