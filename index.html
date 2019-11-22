@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="split left">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul class="card-header" id="myTab" role="tablist">
     <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
             <a class="nav-link active" id="pc-tab" data-toggle="tab" href="#pc" role="tab" aria-controls="pc" aria-selected="true">PC Setup</a>
@@ -23,27 +23,25 @@
     </ul>
 </ul>
         
-<div class="tab-content">
-    <div class="tab-pane active" id="pc" role="tabpanel" aria-labelledby="pc-tab">
+    <div class="card-body active" id="pc" role="tabpanel" aria-labelledby="pc-tab">
             1) vscode - C# extension
             2) git for win/mac - installs bash
             git --version
             3) .net core 3.0 sdk
             dotnet --list-sdks
      </div>
-    <div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
+    <div class="card-body" id="mac" role="tabpanel" aria-labelledby="mac-tab">
             1) vscode - C# extension - mac needs mono to debug .net
             2) git for mac - installs bash
             git --version
             3) .net core 3.0 sdk
             dotnet --list-sdks
     </div>
-    <div class="tab-pane" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+    <div class="card-body" id="additional" role="tabpanel" aria-labelledby="additional-tab">
             4) github account
             5) amazon aws / digital ocean / azure linux 16.04 vm
             6) pgadmin? 
     </div>
-</div>
 
 </div>
 <div class="split right">
