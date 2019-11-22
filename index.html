@@ -10,27 +10,40 @@
 <body>
 <div class="split left">
 <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            <a class="nav-link active" id="pc-tab" data-toggle="tab" href="#pc" role="tab" aria-controls="pc" aria-selected="true">PC Setup</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+            <a class="nav-link" id="mac-tab" data-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Mac Setup</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+            <a class="nav-link" id="additional-tab" data-toggle="tab" href="#additional" role="tab" aria-controls="additional" aria-selected="false">additional</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
-        </li>
+    </ul>
 </ul>
         
-        <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-        </div>
-              
+<div class="tab-content">
+    <div class="tab-pane active" id="pc" role="tabpanel" aria-labelledby="pc-tab">
+            1) vscode - C# extension
+            2) git for win/mac - installs bash
+            git --version
+            3) .net core 3.0 sdk
+            dotnet --list-sdks
+     </div>
+    <div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mac-tab">
+            1) vscode - C# extension - mac needs mono to debug .net
+            2) git for mac - installs bash
+            git --version
+            3) .net core 3.0 sdk
+            dotnet --list-sdks
+    </div>
+    <div class="tab-pane" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+            4) github account
+            5) amazon aws / digital ocean / azure linux 16.04 vm
+            6) pgadmin? 
+    </div>
+</div>
 
 </div>
 <div class="split right">
