@@ -7,7 +7,7 @@ body {
     width: 40%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 55;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -17,7 +17,7 @@ body {
     width: 60%;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 55;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -25,13 +25,13 @@ body {
   /* Control the left side */
   .left {
     left: 0;
-    background-color: blanchedalmond;
+    background-color: rgba(0,114,188,1);
   }
   
   /* Control the right side */
   .right {
     right: 0;
-    background-color: seashell;
+    background-color: rgba(255,255,255,0.5);
     overflow: auto;
   }
   
@@ -59,38 +59,46 @@ body {
     html {
       font-size: 14px;
     }
+    .split {
+      top: 50;
+    }
+  
+    .split-r {
+      top: 50;
+    }
   }
 
   @media (max-width: 805px) {
     .split {
-        height: 40%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        padding-top: 20px;
+      height: unset;
+      width: 100%;
+      position: unset;
+      z-index: 1;
+      top: 50;
+      padding-bottom: 20px;
       }
-    
+      body {
+        overflow: auto; /* Hide scrollbars */
+      }
       .split-r {
-        height: 60%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        padding-top: 20px;
+      height: unset;
+      width: 100%;
+      position: unset;
+      z-index: 1;
+      top: 50;
       }
 
-        /* Control the left side */
-        .left {
-            top: 0;
-            background-color: blanchedalmond;
-        }
+      /* Control the left side */
+      .left {
+          top: 50;
+          background-color: rgba(0,114,188,1);
+      }
         
-        /* Control the right side */
-        .right {
-            top:unset;
-            bottom: 0;
-            background-color: seashell;
-            overflow: auto;
-        }
+      /* Control the right side */
+      .right {
+          top:unset;
+          bottom: 0;
+          background-color: rgba(255,255,255,0.5);
+          overflow: auto;
+      }
   }
