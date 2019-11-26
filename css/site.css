@@ -8,6 +8,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 55;
+    bottom: 30;
     overflow-x: hidden;
     padding-top: 20px;
   }
@@ -18,10 +19,21 @@ body {
     position: fixed;
     z-index: 1;
     top: 55;
+    bottom: 30;
     overflow-x: hidden;
     padding-top: 20px;
   }
   
+  #footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+ }
+ 
+
   /* Control the left side */
   .left {
     left: 0;
@@ -33,6 +45,20 @@ body {
     right: 0;
     background-color: rgba(255,255,255,0.5);
     overflow: auto;
+  }
+
+  /* If you want the content centered horizontally and vertically */
+  .centered-card {
+    width: 75%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered-card img {
+    width: 75%;
+    border-radius: 15%;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -66,6 +92,7 @@ body {
     .split-r {
       top: 50;
     }
+
   }
 
   @media (max-width: 805px) {
@@ -97,8 +124,21 @@ body {
       /* Control the right side */
       .right {
           top:unset;
-          bottom: 0;
+          bottom: 20;
           background-color: rgba(255,255,255,0.5);
           overflow: auto;
+      }
+            /* If you want the content centered horizontally and vertically */
+      .centered-card {
+        width: 100%;
+        /* transform: translate(-50%, -50%); */
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      
+      /* Style the image inside the centered container, if needed */
+      .centered-card img {
+        width: 100%;
+        border-radius: 15%;
       }
   }

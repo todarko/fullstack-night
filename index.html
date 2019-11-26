@@ -25,6 +25,13 @@
             </li>
           </ul>
         </div> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+        <div class=" mr-sm-2" >Questions or issues <a href="mailto:tommyarco@gmail.com">holla</a></div>
+            </form>
+          </div>
       </nav>
 </header>
 <body>
@@ -53,12 +60,12 @@
     
         <p class="card-text">
             <ul>
-                <li><a href="https://code.visualstudio.com/download" >vscode</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a></li>
-                <li><a href="https://git-scm.com/">git for windows</a> - installs bash</li>
+                <li><a href="https://code.visualstudio.com/download" target="_blank" >vscode</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank">C# extension</a></li>
+                <li><a href="https://git-scm.com/" target="_blank">git for windows</a> - installs bash</li>
                 <li><kbd>$ git --version</kbd></li>
-                    <li><a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core</a> install the SDK</li>
+                    <li><a href="https://dotnet.microsoft.com/download/dotnet-core/3.0" target="_blank">.NET Core</a> install the SDK</li>
                 <li><kbd>$ dotnet --list-sdks</kbd></li>
-                    <li><a href="https://www.pgadmin.org/download/">pgAdmin 4</a> - DB tools</li>
+                    <li><a href="https://www.pgadmin.org/download/" target="_blank">pgAdmin 4</a> - DB tools</li>
             </ul>
         </p>
         <kbd>Run commands that look like this to verify version/install</kbd>
@@ -70,13 +77,13 @@
      
         <p class="card-text">
             <ul>
-                <li><a href="https://code.visualstudio.com/download" >vscode</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension</a></li>
-                <li><a href="https://git-scm.com/">git for mac</a> - installs bash</li>
+                <li><a href="https://code.visualstudio.com/download" target="_blank" >vscode</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" target="_blank">C# extension</a></li>
+                <li><a href="https://git-scm.com/" target="_blank">git for mac</a> - installs bash</li>
                     <li><kbd>$ git --version</kbd></li>
-                    <li><a href="https://www.mono-project.com/download/stable/#download-mac">Mono to debug</a> - Use Visual Studio Channel</li>
-                    <li><a href="https://dotnet.microsoft.com/download/dotnet-core/3.0">.NET Core</a> install the SDK</li>
+                    <li><a href="https://www.mono-project.com/download/stable/#download-mac" target="_blank">Mono to debug</a> - Use Visual Studio Channel</li>
+                    <li><a href="https://dotnet.microsoft.com/download/dotnet-core/3.0" target="_blank">.NET Core</a> install the SDK</li>
                     <li><kbd>$ dotnet --list-sdks</kbd></li>
-                    <li><a href="https://www.pgadmin.org/download/">pgAdmin 4</a> - DB tools</li>
+                    <li><a href="https://www.pgadmin.org/download/" target="_blank">pgAdmin 4</a> - DB tools</li>
             </ul>
         </p>
         <kbd>Run commands that look like this to verify version/install</kbd>
@@ -102,45 +109,100 @@
     <div id="list-view">
         <div class="container">
                 <div class="tab-pane active" id="pcimage" role="tabpanel">
-                        <p class="card-text">
-                            <ul>
-                                <li>1) vscode - C# extension</li>
-                                <li>2) git for win/mac - installs bash</li>
-                                <li><kbd>$ git --version</kbd></li>
-                                <li>3) .net core 3.0 sdk</li>
-                                <li><kbd>$ dotnet --list-sdks</kbd></li>
-                            </ul>
-                        </p>
-                        <a href="#" class="card-link text-danger">Read more</a>
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\dl.png" class="card mx-auto" alt="...">
                         </div>
-                        
-                        <div class="tab-pane" id="macimage" hidden role="tabpanel" aria-labelledby="mac-tab">  
-                        <p class="card-text">
-                            <ul>
-                                    <li>1) vscode - C# extension - mac needs mono to debug .net</li>
-                                    <li>2) git for mac - installs bash</li>
-                                    <li><kbd>$ git --version</kbd></li>
-                                    <li>3) .net core 3.0 sdk</li>
-                                    <li><kbd>$ dotnet --list-sdks</kbd></li>
-                            </ul>
-                        </p>
-                        <a href="#" class="card-link text-danger">Read more</a>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\c.png" class="card mx-auto" alt="...">
                         </div>
-                        
-                        <div class="tab-pane" id="additionalimage" hidden role="tabpanel" aria-labelledby="additional-tab">
-                        <p class="card-text">
-                                    <li>github account</li>
-                                    <li>amazon aws / digital ocean / azure linux 16.04 vm</li>
-                                    <li>pgadmin</li>
-                        </p>
-                        <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\openin.png" class="card mx-auto" alt="...">
                         </div>
+                        <br />
+                </div>
+                <div class="tab-pane active" id="macimage" role="tabpanel">
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\dl.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\c.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\openin.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                </div>
+                <div class="tab-pane active" id="additionalimage" role="tabpanel">
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\dl.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\c.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                        <div class="card centered-card mx-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                <img src="img\openin.png" class="card mx-auto" alt="...">
+                        </div>
+                        <br />
+                </div>
             </div>
         </div>
     </div>
 </div>
 </body>
-<footer></footer>
+<footer>
+    
+</footer>
 </html>
 <script>
 $('#myTab-list a').on('click', function (e) {
