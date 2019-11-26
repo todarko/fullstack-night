@@ -58,7 +58,7 @@ body {
   /* Style the image inside the centered container, if needed */
   .centered-card img {
     width: 75%;
-    border-radius: 15%;
+    border-radius: 5%;
   }
   
   /* If you want the content centered horizontally and vertically */
@@ -139,6 +139,6 @@ body {
       /* Style the image inside the centered container, if needed */
       .centered-card img {
         width: 100%;
-        border-radius: 15%;
+        border-radius: 5%;
       }
   }
