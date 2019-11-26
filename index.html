@@ -108,10 +108,10 @@
 <div class="split-r right">
     <div id="list-view">
         <div class="container">
-                <div class="tab-pane active" id="pcimage" role="tabpanel">
+                <div class="tab-pane active" id="pcimage" name="pcimage" role="tabpanel">
                         <div class="card centered-card mx-auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-title"><a name="pc">PC Install</a></h5>
                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
@@ -137,10 +137,10 @@
                         </div>
                         <br />
                 </div>
-                <div class="tab-pane active" id="macimage" role="tabpanel">
+                <div class="tab-pane" id="macimage" hidden role="tabpanel">
                         <div class="card centered-card mx-auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-title"><a name="mac">Mac Install</a></h5>
                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
@@ -166,10 +166,10 @@
                         </div>
                         <br />
                 </div>
-                <div class="tab-pane active" id="additionalimage" role="tabpanel">
+                <div class="tab-pane" id="additionalimage" hidden role="tabpanel">
                         <div class="card centered-card mx-auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-title"><a name="add">Additional Info</a></h5>
                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
@@ -213,18 +213,21 @@ $('#myTab-list a').on('click', function (e) {
     $('#macimage').attr('hidden',false)
     $('#pcimage').attr('hidden',true)
     $('#additionalimage').attr('hidden',true)
+    window.location.href = "#"+macimage;
   }
   if ($(this)[0].hash == '#pc') {
     e.preventDefault()
     $('#macimage').attr('hidden',true)
     $('#pcimage').attr('hidden',false)
     $('#additionalimage').attr('hidden',true)
+    window.location.href = "#"+pcimage;
   }
   if ($(this)[0].hash == '#additional') {
     e.preventDefault()
     $('#macimage').attr('hidden',true)
     $('#pcimage').attr('hidden',true)
     $('#additionalimage').attr('hidden',false)
+    window.location.href = "#"+additionalimage;
   }
 })
 </script>
