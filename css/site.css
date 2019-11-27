@@ -1,7 +1,10 @@
 /* Split the screen in half */
+
 body {
-    overflow: hidden; /* Hide scrollbars */
-  }
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
 .split {
     height: 100%;
     width: 40%;
@@ -11,9 +14,9 @@ body {
     bottom: 30;
     overflow-x: hidden;
     padding-top: 20px;
-  }
+}
 
-  .split-r {
+.split-r {
     height: 100%;
     width: 60%;
     position: fixed;
@@ -22,123 +25,131 @@ body {
     bottom: 30;
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  #footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    width:100%;
-    background:#999;
- }
- 
+}
 
-  /* Control the left side */
-  .left {
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #999;
+}
+
+
+/* Control the left side */
+
+.left {
     left: 0;
-    background-color: rgba(0,114,188,1);
-  }
-  
-  /* Control the right side */
-  .right {
+    background-color: rgba(0, 114, 188, 1);
+}
+
+
+/* Control the right side */
+
+.right {
     right: 0;
     background-color: rgba(185, 198, 212, 0.5);
     overflow: auto;
-  }
+}
 
-  /* If you want the content centered horizontally and vertically */
-  .centered-card {
+
+/* If you want the content centered horizontally and vertically */
+
+.centered-card {
     width: 75%;
     /* transform: translate(-50%, -50%); */
     text-align: center;
     padding-bottom: 20px;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered-card img {
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.centered-card img {
     width: 75%;
     border-radius: 5%;
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.centered img {
     width: 150px;
     border-radius: 50%;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     html {
-      font-size: 12px;
+        font-size: 12px;
     }
-  }
-  @media (max-width: 950px) {
+}
+
+@media (max-width: 950px) {
     html {
-      font-size: 14px;
+        font-size: 14px;
     }
     .split {
-      top: 50;
+        top: 50;
     }
-  
     .split-r {
-      top: 50;
+        top: 50;
     }
+}
 
-  }
-
-  @media (max-width: 805px) {
+@media (max-width: 805px) {
     .split {
-      height: unset;
-      width: 100%;
-      position: unset;
-      z-index: 1;
-      top: 50;
-      padding-bottom: 20px;
-      }
-      body {
-        overflow: auto; /* Hide scrollbars */
-      }
-      .split-r {
-      height: unset;
-      width: 100%;
-      position: unset;
-      z-index: 1;
-      top: 50;
-      }
-
-      /* Control the left side */
-      .left {
-          top: 50;
-          background-color: rgba(0,114,188,1);
-      }
-        
-      /* Control the right side */
-      .right {
-          top:unset;
-          bottom: 20;
-          background-color: rgba(255,255,255,0.5);
-          overflow: auto;
-      }
-            /* If you want the content centered horizontally and vertically */
-      .centered-card {
+        height: unset;
+        width: 100%;
+        position: unset;
+        z-index: 1;
+        top: 50;
+        padding-bottom: 20px;
+    }
+    body {
+        overflow: auto;
+        /* Hide scrollbars */
+    }
+    .split-r {
+        height: unset;
+        width: 100%;
+        position: unset;
+        z-index: 1;
+        top: 50;
+    }
+    /* Control the left side */
+    .left {
+        top: 50;
+        background-color: rgba(0, 114, 188, 1);
+    }
+    /* Control the right side */
+    .right {
+        top: unset;
+        bottom: 20;
+        background-color: rgba(255, 255, 255, 0.5);
+        overflow: auto;
+    }
+    /* If you want the content centered horizontally and vertically */
+    .centered-card {
         width: 100%;
         /* transform: translate(-50%, -50%); */
         text-align: center;
         padding-bottom: 20px;
-      }
-      
-      /* Style the image inside the centered container, if needed */
-      .centered-card img {
+    }
+    /* Style the image inside the centered container, if needed */
+    .centered-card img {
         width: 100%;
         border-radius: 5%;
-      }
-  }
+    }
+}
