@@ -1,0 +1,11 @@
+remote dev on ubuntu with vscode, cuts out github account, still should commit and push from there to keep source control active
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+connect via ssh username@iporservername
+
+have it try, it will use local windows account name
+
+change settings and set a custome config file path to file just created in ssh folder
+
+try to connect again and it will user whatever username is in file
