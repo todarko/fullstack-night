@@ -13,7 +13,7 @@ try to connect again and it will user whatever username is in file
 setup server ubuntu 16.04
 ssh-keygen 
 bash ssh to server
-ufw - open port 22 for ssh - 80 will  be for web traffic, remote postgres will be 54 something
+ufw - open port 22 for ssh - 80 will  be for web traffic, ssh tunnel from pgAdmin to server postgres instance
 aws/azure/digitalocean open ports
 ip will change on restarts prolly
 sdk install for .netcore
